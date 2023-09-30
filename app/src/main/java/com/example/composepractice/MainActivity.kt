@@ -8,9 +8,11 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
+import com.example.composepractice.screen.basics.GameScreen
 import com.example.composepractice.screen.sideeffects.DisposableEffectScreen
 import com.example.composepractice.screen.sideeffects.GreetingWithLaunchedEffect
 import com.example.composepractice.screen.sideeffects.SideEffectsScreen
+import com.example.composepractice.screen.state.viewmodel.GameScreenWithViewModel
 import com.example.composepractice.ui.theme.ComposePracticeTheme
 
 class MainActivity : ComponentActivity() {
@@ -28,7 +30,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    DisposableEffectScreen()
+                    GameScreenWithViewModel()
                 }
             }
         }
