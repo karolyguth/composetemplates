@@ -7,8 +7,14 @@ import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.navigation.NavHostController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import androidx.navigation.compose.rememberNavController
 import com.example.composepractice.screen.basics.GameScreen
+import com.example.composepractice.screen.navigation.MyAppNavHost
 import com.example.composepractice.screen.sideeffects.DisposableEffectScreen
 import com.example.composepractice.screen.sideeffects.GreetingWithLaunchedEffect
 import com.example.composepractice.screen.sideeffects.SideEffectsScreen
@@ -30,9 +36,10 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    GameScreenWithViewModel()
+                    MyAppNavHost()
                 }
             }
         }
     }
 }
+
