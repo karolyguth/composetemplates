@@ -14,6 +14,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.composepractice.screen.basics.GameScreen
+import com.example.composepractice.screen.layouts.LayoutsBasicsScreen
 import com.example.composepractice.screen.navigation.MyAppNavHost
 import com.example.composepractice.screen.sideeffects.DisposableEffectScreen
 import com.example.composepractice.screen.sideeffects.GreetingWithLaunchedEffect
@@ -36,7 +37,8 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    MyAppNavHost()
+                    LayoutsBasicsScreen()
+                    //MyAppNavHost()
                 }
             }
         }
