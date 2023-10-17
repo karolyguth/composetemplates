@@ -39,8 +39,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //LayoutsBasicsScreen()
-                    //MyAppNavHost()
-                    Movies()
+                    MyAppNavHost()
+                    //Movies()
                 }
             }
         }

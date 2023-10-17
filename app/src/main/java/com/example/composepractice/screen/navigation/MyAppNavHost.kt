@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.composepractice.screen.navigation.navigation.MainNavigation
 import com.example.composepractice.screen.navigation.ui.about.AboutScreen
 import com.example.composepractice.screen.navigation.ui.game.GameScreenWithNavigation
 import com.example.composepractice.screen.navigation.ui.help.HelpScreen
@@ -18,28 +19,28 @@ import kotlin.math.log
 fun MyAppNavHost(
     modifier: Modifier = Modifier,
     navController: NavHostController = rememberNavController(),
-    startDestination: String = "mainmenuscreen"
+    startDestination: String = MainNavigation.MainScreen.route
 ) {
     NavHost(
         navController = navController,
         startDestination = startDestination ) {
 
-        composable("mainmenuscreen") {
+        composable(MainNavigation.MainScreen.route) {
             MainMenuScreen(
-                onNavigateToGame = {navController.navigate("gamescreen?upperBound=20")},
-                onNavigateToHelp = {navController.navigate("helpscreen")},
-                onNavigateToAbout = {navController.navigate("aboutscreen")}
+                onNavigateToGame = {navController.navigate(MainNavigation.GamesScreen.createRoute(20))},
+                onNavigateToHelp = {navController.navigate(MainNavigation.HelpScreen.route)},
+                onNavigateToAbout = {navController.navigate(MainNavigation.AboutScreen.route)}
             )
         }
 
-        composable("gamescreen?upperBound={upperBound}") {
+        composable(MainNavigation.GamesScreen.route) {
             GameScreenWithNavigation()
         }
 
-        composable("helpscreen") {
+        composable(MainNavigation.HelpScreen.route) {
             HelpScreen()
         }
-        composable("aboutscreen") {
+        composable(MainNavigation.AboutScreen.route) {
             AboutScreen()
         }
     }
