@@ -20,6 +20,7 @@ import com.example.composepractice.screen.sideeffects.DisposableEffectScreen
 import com.example.composepractice.screen.sideeffects.GreetingWithLaunchedEffect
 import com.example.composepractice.screen.sideeffects.SideEffectsScreen
 import com.example.composepractice.screen.state.viewmodel.GameScreenWithViewModel
+import com.example.composepractice.screen.theming.Movies
 import com.example.composepractice.ui.theme.ComposePracticeTheme
 
 class MainActivity : ComponentActivity() {
@@ -37,8 +38,9 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    LayoutsBasicsScreen()
+                    //LayoutsBasicsScreen()
                     //MyAppNavHost()
+                    Movies()
                 }
             }
         }
