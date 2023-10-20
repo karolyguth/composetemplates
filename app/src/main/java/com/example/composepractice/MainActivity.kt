@@ -16,6 +16,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.composepractice.screen.basics.GameScreen
 import com.example.composepractice.screen.layouts.LayoutsBasicsScreen
 import com.example.composepractice.screen.navigation.MyAppNavHost
+import com.example.composepractice.screen.pagers.PagerScreen
 import com.example.composepractice.screen.sideeffects.DisposableEffectScreen
 import com.example.composepractice.screen.sideeffects.GreetingWithLaunchedEffect
 import com.example.composepractice.screen.sideeffects.SideEffectsScreen
@@ -39,8 +40,9 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     //LayoutsBasicsScreen()
-                    MyAppNavHost()
+                    //MyAppNavHost()
                     //Movies()
+                    PagerScreen()
                 }
             }
         }
