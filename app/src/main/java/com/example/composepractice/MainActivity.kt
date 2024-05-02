@@ -9,16 +9,12 @@ import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.ui.Modifier
-import com.example.presentation.ui.theme.ComposePracticeTheme
+import com.example.composepractice.presentation.ui.theme.ComposePracticeTheme
 
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
-        var name : String? = "Charlie"
-        name = null
-        Log.d("DEMO", "${name?.length}")
 
         setContent {
             ComposePracticeTheme {
