@@ -1,4 +1,4 @@
-package com.example.composepractice.presentation.screen.cards.shapes
+package com.example.composepractice.presentation.components.shapes
 
 import androidx.compose.ui.geometry.Rect
 import androidx.compose.ui.geometry.Size

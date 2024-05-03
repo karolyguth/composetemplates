@@ -1,4 +1,4 @@
-package com.example.composepractice.presentation.screen.cards
+package com.example.composepractice.presentation.components.cards
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -31,7 +31,7 @@ import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import com.example.composepractice.presentation.screen.cards.shapes.BottomArchedCutOffRectangleShape
+import com.example.composepractice.presentation.components.shapes.BottomArchedCutOffRectangleShape
 import com.example.composepractice.presentation.ui.LocalSpacing
 
 @OptIn(ExperimentalMaterial3Api::class)
