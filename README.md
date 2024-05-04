@@ -1,6 +1,6 @@
 # Compose Templates
 
-Welcome to the Compose Templates repository! This repository serves as a central location for storing reusable UI elements created with Jetpack Compose.
+Welcome to the Compose Templates repository! This repository serves as a central location for storing reusable UI elements created with Jetpack Compose. The repo will be continously updated.
 
 ## Overview
 
