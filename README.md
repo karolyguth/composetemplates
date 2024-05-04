@@ -23,7 +23,7 @@ To use these templates in your project, simply clone the repository or copy the 
 
 ## Contributing
 
-Contributions to this repository are welcome! If you've created a useful Compose UI template that you think others would find helpful, feel free to submit a pull request to add it to the collection. Please ensure that your contributions adhere to the repository's guidelines and coding standards.
+Contributions to this repository are welcome! If you've created a useful Compose UI template that you think others would find helpful, feel free to submit a pull request to add it to the collection.
 
 ## Acknowledgments
 
